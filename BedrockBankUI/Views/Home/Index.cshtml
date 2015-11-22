@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using (Html.BeginForm("Signin", "Home"))
+
+{
+
+
+<div class="jumbotron">
+    <p class="lead">Welcome to Bedrock Bank!</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Please login</h2>
+        <p>
+            Enter your social security number:@Html.TextBox("txtSSN")
+        </p>
+        <p><input id="btnSignIn" type="submit" value="Signin" /></p>
+    </div>
+</div>
+}
